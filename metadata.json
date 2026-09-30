@@ -1,0 +1,6 @@
+{
+  "name": "Albert — Tattoo Artist",
+  "description": "Portfolio y sitio web oficial de Albert (@albert_tattoo_rd), artista del tatuaje. Fine Line, Realismo, Black & Grey y diseños exclusivos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
