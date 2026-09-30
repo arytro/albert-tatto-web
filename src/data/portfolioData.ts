@@ -2,8 +2,17 @@
  * DATOS DEL PORTAFOLIO - ALBERT TATUADOR (@albert_tattoo_rd)
  * 
  * Fotografías reales extraídas de las publicaciones de Instagram de Albert.
- * Sin etiquetas forzadas: todas las imágenes se presentan directamente en la galería.
+ * Importadas directamente para que Vite las empaquete correctamente en producción (Vercel, Netlify, etc.)
  */
+
+import photoDax from '../assets/images/albert_real_Dax9osiRmYd.jpg';
+import photoDYB from '../assets/images/albert_real_DYBF5zbjlMC.jpg';
+import photoDXe from '../assets/images/albert_real_DXe3ThZkZIY.jpg';
+import photoDXI from '../assets/images/albert_real_DXI5cS6DlD_.jpg';
+import photoDW2 from '../assets/images/albert_real_DW2cP8qAV20.jpg';
+import photoDUY from '../assets/images/albert_real_DUYbOjGjngT.jpg';
+import photoDUH from '../assets/images/albert_real_DUHYoK_DpG9.jpg';
+import photoDT5 from '../assets/images/albert_real_DT5tl-hjhb_.jpg';
 
 export interface RealInstagramPost {
   id: string;
@@ -20,7 +29,7 @@ export const ALBERT_REAL_POSTS: RealInstagramPost[] = [
     shortcode: 'Dax9osiRmYd',
     url: 'https://www.instagram.com/p/Dax9osiRmYd/?hl=es-la',
     title: 'Tatuaje 01',
-    image: '/src/assets/images/albert_real_Dax9osiRmYd.jpg',
+    image: photoDax,
     details: 'Diseño en piel con contraste profundo y gradiente de sombra.'
   },
   {
@@ -28,7 +37,7 @@ export const ALBERT_REAL_POSTS: RealInstagramPost[] = [
     shortcode: 'DYBF5zbjlMC',
     url: 'https://www.instagram.com/p/DYBF5zbjlMC/?hl=es-la',
     title: 'Tatuaje 02',
-    image: '/src/assets/images/albert_real_DYBF5zbjlMC.jpg',
+    image: photoDYB,
     details: 'Trabajo detallado con precisión de trazo.'
   },
   {
@@ -36,7 +45,7 @@ export const ALBERT_REAL_POSTS: RealInstagramPost[] = [
     shortcode: 'DXe3ThZkZIY',
     url: 'https://www.instagram.com/p/DXe3ThZkZIY/?hl=es-la',
     title: 'Tatuaje 03',
-    image: '/src/assets/images/albert_real_DXe3ThZkZIY.jpg',
+    image: photoDXe,
     details: 'Composición personalizada adaptada a la anatomía.'
   },
   {
@@ -44,7 +53,7 @@ export const ALBERT_REAL_POSTS: RealInstagramPost[] = [
     shortcode: 'DXI5cS6DlD_',
     url: 'https://www.instagram.com/p/DXI5cS6DlD_/?hl=es-la',
     title: 'Tatuaje 04',
-    image: '/src/assets/images/albert_real_DXI5cS6DlD_.jpg',
+    image: photoDXI,
     details: 'Detalle de saturación y textura continua.'
   },
   {
@@ -52,7 +61,7 @@ export const ALBERT_REAL_POSTS: RealInstagramPost[] = [
     shortcode: 'DW2cP8qAV20',
     url: 'https://www.instagram.com/p/DW2cP8qAV20/?hl=es-la',
     title: 'Tatuaje 05',
-    image: '/src/assets/images/albert_real_DW2cP8qAV20.jpg',
+    image: photoDW2,
     details: 'Composición dinámica y balance visual en piel.'
   },
   {
@@ -60,7 +69,7 @@ export const ALBERT_REAL_POSTS: RealInstagramPost[] = [
     shortcode: 'DUYbOjGjngT',
     url: 'https://www.instagram.com/p/DUYbOjGjngT/?hl=es-la',
     title: 'Tatuaje 06',
-    image: '/src/assets/images/albert_real_DUYbOjGjngT.jpg',
+    image: photoDUY,
     details: 'Trazo nítido y curvas continuas.'
   },
   {
@@ -68,7 +77,7 @@ export const ALBERT_REAL_POSTS: RealInstagramPost[] = [
     shortcode: 'DUHYoK_DpG9',
     url: 'https://www.instagram.com/p/DUHYoK_DpG9/?hl=es-la',
     title: 'Tatuaje 07',
-    image: '/src/assets/images/albert_real_DUHYoK_DpG9.jpg',
+    image: photoDUH,
     details: 'Pieza de gran formato y profundidad.'
   },
   {
@@ -76,7 +85,7 @@ export const ALBERT_REAL_POSTS: RealInstagramPost[] = [
     shortcode: 'DT5tl-hjhb_',
     url: 'https://www.instagram.com/p/DT5tl-hjhb_/?hl=es-la',
     title: 'Tatuaje 08',
-    image: '/src/assets/images/albert_real_DT5tl-hjhb_.jpg',
+    image: photoDT5,
     details: 'Equilibrio de luces y sombras en acabado de alta definición.'
   }
 ];
@@ -97,7 +106,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: 'work-1',
     title: 'Tatuaje 01',
     aspect: 'vertical',
-    imageSrc: '/src/assets/images/albert_real_Dax9osiRmYd.jpg',
+    imageSrc: photoDax,
     details: 'Diseño en piel con contraste profundo y sombras.',
     instagramUrl: 'https://www.instagram.com/p/Dax9osiRmYd/?hl=es-la',
     shortcode: 'Dax9osiRmYd',
@@ -107,7 +116,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: 'work-2',
     title: 'Tatuaje 02',
     aspect: 'square',
-    imageSrc: '/src/assets/images/albert_real_DYBF5zbjlMC.jpg',
+    imageSrc: photoDYB,
     details: 'Trabajo detallado con precisión de trazo.',
     instagramUrl: 'https://www.instagram.com/p/DYBF5zbjlMC/?hl=es-la',
     shortcode: 'DYBF5zbjlMC',
@@ -117,7 +126,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: 'work-3',
     title: 'Tatuaje 03',
     aspect: 'horizontal',
-    imageSrc: '/src/assets/images/albert_real_DUYbOjGjngT.jpg',
+    imageSrc: photoDUY,
     details: 'Composición fluida adaptada anatómicamente.',
     instagramUrl: 'https://www.instagram.com/p/DUYbOjGjngT/?hl=es-la',
     shortcode: 'DUYbOjGjngT',
@@ -127,7 +136,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: 'work-4',
     title: 'Tatuaje 04',
     aspect: 'featured',
-    imageSrc: '/src/assets/images/albert_real_DXe3ThZkZIY.jpg',
+    imageSrc: photoDXe,
     details: 'Composición personalizada con sombreado de alta densidad.',
     instagramUrl: 'https://www.instagram.com/p/DXe3ThZkZIY/?hl=es-la',
     shortcode: 'DXe3ThZkZIY',
@@ -137,7 +146,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: 'work-5',
     title: 'Tatuaje 05',
     aspect: 'square',
-    imageSrc: '/src/assets/images/albert_real_DXI5cS6DlD_.jpg',
+    imageSrc: photoDXI,
     details: 'Gradientes continuos y definición en piel.',
     instagramUrl: 'https://www.instagram.com/p/DXI5cS6DlD_/?hl=es-la',
     shortcode: 'DXI5cS6DlD_',
@@ -147,7 +156,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: 'work-6',
     title: 'Tatuaje 06',
     aspect: 'horizontal',
-    imageSrc: '/src/assets/images/albert_real_DW2cP8qAV20.jpg',
+    imageSrc: photoDW2,
     details: 'Líneas limpias combinadas con degradados sutiles.',
     instagramUrl: 'https://www.instagram.com/p/DW2cP8qAV20/?hl=es-la',
     shortcode: 'DW2cP8qAV20',
@@ -157,7 +166,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: 'work-7',
     title: 'Tatuaje 07',
     aspect: 'vertical',
-    imageSrc: '/src/assets/images/albert_real_DUHYoK_DpG9.jpg',
+    imageSrc: photoDUH,
     details: 'Composición de gran escala y profundidad.',
     instagramUrl: 'https://www.instagram.com/p/DUHYoK_DpG9/?hl=es-la',
     shortcode: 'DUHYoK_DpG9',
@@ -167,7 +176,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: 'work-8',
     title: 'Tatuaje 08',
     aspect: 'square',
-    imageSrc: '/src/assets/images/albert_real_DT5tl-hjhb_.jpg',
+    imageSrc: photoDT5,
     details: 'Equilibrio riguroso entre luz y sombras.',
     instagramUrl: 'https://www.instagram.com/p/DT5tl-hjhb_/?hl=es-la',
     shortcode: 'DT5tl-hjhb_',
@@ -188,5 +197,5 @@ export const ARTIST_INFO = {
   city: 'República Dominicana',
   schedule: 'Lunes a Sábado: 10:00 AM – 7:00 PM (Previa Cita)',
   googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Calle+Bono+174+Emilio+Prud+Homme+Republica+Dominicana',
-  heroImage: '/src/assets/images/albert_real_Dax9osiRmYd.jpg'
+  heroImage: photoDax
 };
